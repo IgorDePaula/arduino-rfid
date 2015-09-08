@@ -1,0 +1,33 @@
+Scan a MIFARE Classic PICC to demonstrate read and write.
+Using key (for A and B): FF FF FF FF FF FF
+BEWARE: Data will be written to the PICC, in sector #1
+Card UID: 74 48 8B 3F
+PICC type: MIFARE 1KB
+Authenticating using key A...
+Current data in sector:
+   1      7   00 00 00 00  00 00 FF 07  80 69 FF FF  FF FF FF FF  [ 0 0 1 ] 
+          6   00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  [ 0 0 0 ] 
+          5   73 73 73 73  73 73 73 73  73 73 73 73  73 73 04 00  [ 0 0 0 ] 
+          4   6F 69 6A 73  73 73 73 73  73 73 73 73  73 73 73 73  [ 0 0 0 ] 
+
+Reading data from block 4 ...
+Data in block 4:
+ 6F 69 6A 73 73 73 73 73 73 73 73 73 73 73 73 73
+
+Authenticating again using key B...
+
+Reading data from block 4 ...
+Data in block 4:
+ 6F 69 6A 73 73 73 73 73 73 73 73 73 73 73 73 73
+Checking result...
+Number of bytes that match = 0
+Failure, no match :-(
+  perhaps the write didn't work properly...
+
+Current data in sector:
+   1      7   00 00 00 00  00 00 FF 07  80 69 FF FF  FF FF FF FF  [ 0 0 1 ] 
+          6   00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00  [ 0 0 0 ] 
+          5   73 73 73 73  73 73 73 73  73 73 73 73  73 73 04 00  [ 0 0 0 ] 
+          4   6F 69 6A 73  73 73 73 73  73 73 73 73  73 73 73 73  [ 0 0 0 ] 
+
+
